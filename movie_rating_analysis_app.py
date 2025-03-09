@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 #Load titanic dataset
 @st.cache_data
 def load_data():
-    movie = pd.read_csv(r'C:\Users\USER\Documents\Python\Nareshit data analysis\Data analysis\MOVIE RATINGS _ ADVANCE VISUALIZATION _ EDA 1\Movie analysis with front end by streamlit\Movie-Rating.csv')
+    movie = pd.read_csv(r'Movie-Rating.csv')
     movie.columns=['Film', 'Genre', 'CriticsRating', 'AudienceRatings', 'BudgetMillion','Year']
     for col in movie.columns:
         if movie[col].dtype == 'object':
